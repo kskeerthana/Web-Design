@@ -1,0 +1,109 @@
+header{
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    background-color: #80604d;
+    /* #5C4033; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-self: center;
+}
+li{
+    float: left;
+}
+li:last-child{
+    float: right;
+}
+li a{
+    display: inline-block;
+    color: beige;
+    text-align: center;
+    padding: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: black ;
+}
+.imgcont{
+    display: block;
+    /* padding: 1px 4px; */
+    margin-right: auto;
+    margin-left: auto;
+    width:fit-content;
+    
+}
+
+#menutable{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4{
+    text-align: center;
+    font-size: larger;
+}
+
+/* #contactus{
+    
+    border-radius: 10em;
+} */
+
+.formdata{
+    box-sizing: content-box;
+    display: flex;
+    size: 50px;
+    background-color: #80604d;
+    border-radius: 3px;
+    padding: 1.8em;
+}
+
+.messagebox{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.messagebox > textarea{
+    flex : 1;
+    max-width: 18em;
+}
+
+.contactdeets{
+    flex: 0;
+    order: 1;
+    margin-right: 3em;
+}
+
+.contactdeets input{
+    width: 100%;
+}
+
+.contactdeets input, .contactdeets button{
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.form{
+    box-sizing: border-box;
+    display: grid;
+    background-color: #80604d;
+    border-radius: 3px;
+    padding: 1.8em;
+}
+
+.orderdeets{
+    order: 1;
+    flex: 0;
+}
+
+.orderdeets label{
+    display: inline;
+}

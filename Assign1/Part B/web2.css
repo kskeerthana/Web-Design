@@ -1,0 +1,141 @@
+header{
+    text-align: center;
+    font-size: x-large;
+    /* font-style: italic; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    background-color: #80604d;
+    /* #5C4033; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-self: center;
+}
+li{
+    float: left;
+}
+li :last-child{
+    float: right;
+}
+li a{
+    display: inline-block;
+    color: beige;
+    text-align: center;
+    padding: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: black ;
+}
+
+#navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+#imagecheck{
+    display: inline-flex;
+}  
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .drop-btn {
+    font-size: 16px;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+    display: inline-block;
+    color: beige;
+    padding: 16px;
+    background-color: inherit;  
+    margin: 0;
+  }
+
+  .dropdown .drop-btn:hover{
+    background-color: black ;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.flex-item{
+  display: inline-block;
+}
+.images{
+  display: flex;
+  margin-left: 2em;
+}
+
+.images > img{
+  padding: 1em;
+  width: 300px;
+  height: 350px;
+}
+
+.flex-item .classics{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flex-item .audio{
+  display: block;
+  width: 200px;
+}
+
+.videos{
+  display: flex;
+}
+
+.videos > video{
+  padding: 1em;
+  margin-top: none;
+  width: 400px;
+  height: 350px;
+}
+
+.homepage{
+  padding: 2em;
+  padding-left: 0em;
+  margin-left: 0px;
+}
+
+footer{
+  background-color: white;
+  border-top: 2px  gray;
+}
+/* .grid-container{
+    display: grid;
+} */
