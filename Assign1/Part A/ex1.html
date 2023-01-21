@@ -4,10 +4,11 @@
     <title>Cafe</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="ex1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <header>
-    <link rel="icon" type="image/x-icon" href="images/books.jpg">
+    <link rel="icon" type="image/x-icon" href="images/coffeebanner.jpeg">
     <h3>
         El Café
     </h3>
@@ -22,65 +23,45 @@
     </ul>
     <section id="home">
         <div id="parentcont">
-            <div class="imgcont"><img src = "images/books.jpg" alt="books"></div>
+            <div class="imgcont"><img src = "images/coffeebanner.jpeg" alt="books"></div>
         </div>
     </section>
     <section id="menu">
-        <!-- <h4>
-            Menu
-        </h4> -->
-        <table id="menutable">
-            <th>Menu</th>
-                <tr id="drinks">
-                    <td>Drinks</td>
-                    <td>Prices</td>
-                </tr>
-                <tr>
-                    <td>Hot Coffees</td>
-                    <td>10$</td>
-                </tr>
-                <tr>
-                    <td>Hot Teas </td>
-                    <td>8$</td>
-                </tr>
-                <tr>
-                    <td>Cold Coffees</td>
-                    <td>15$</td>
-                </tr>
-                <tr>
-                    <td>Iced Teas</td>
-                    <td>10$</td>
-                </tr>
-                <tr>
-                    <td>Cold Drinks</td>
-                    <td>5$</td>
-                </tr>
-
-                <tr id="food">
-                    <td>Food</td>
-                    <td>Prices</td>
-                </tr>
-                <tr>
-                    <td>Hot Breakfast</td>
-                    <td>10$</td>
-                </tr>
-                <tr>
-                    <td>Bakery </td>
-                    <td>8$</td>
-                </tr>
-                <tr>
-                    <td>Lunch</td>
-                    <td>15$</td>
-                </tr>
-                <tr>
-                    <td>Snacks & Teas</td>
-                    <td>10$</td>
-                </tr>
-                <tr>
-                    <td>Oatmeal & Yogurt</td>
-                    <td>5$</td>
-                </tr>
-        </table>
+        <div class="flex-menu">
+            <div class ="side-menu">
+                <table>
+                    <tr><th>Drinks</th></tr>
+                    <tr><td>Coffees</td> </tr>
+                    <tr><td>Hot Teas</td></tr>
+                    <tr><td>Cold Coffees</td></tr>
+                    <tr><td>Iced Teas</td></tr>
+                    <tr><td>Cold Drinks</td></tr>
+                </table>
+                <table>
+                    <tr><th>Food</th></tr>
+                    <tr><td>Hot Breakfast</td> </tr>
+                    <tr><td>Bakery</td></tr>
+                    <tr><td>Lunch</td></tr>
+                    <tr><td>Snacks & Sweets</td></tr>
+                    <tr><td>Oatmeal & Yogurt</td></tr>
+                </table>
+            </div>
+            <div class="flex-drink-menu">
+                <!-- <div>Drinks</div> -->
+                <div><img src ="images/black-coffee.jpeg" alt="avatar">Coffees</div>
+                <div><img src ="images/tea.jpeg" alt="avatar">Hot Teas</div>
+                <div><img src ="images/coldcoffee.jpeg" alt="avatar">Cold Coffees</div>
+                <div><img src ="images/icetea.jpeg" alt="avatar">Iced Teas</div>
+                <div><img src ="images/cold.jpeg" alt="avatar">Cold Drinks</div>
+                <div class="partition">
+                <div><img src ="images/sandwich.jpeg" alt="avatar"> Hot Breakfast</div>
+                <div><img src ="images/danish.jpeg" alt="avatar">Bakery</div>
+                <div><img src ="images/lunch.jpeg" alt="avatar">Lunch</div>
+                <div><img src ="images/donut.jpeg" alt="avatar">Snacks & Sweets</div>
+                <div><img src ="images/oatmeal.jpeg" alt="avatar">Oatmeal & Yogurt</div>
+                </div>
+            </div>
+        </div>    
     </section>
 
     <section id="contactus">
@@ -97,7 +78,12 @@
                 <input type="text" id="email"><br>
             
                 <button type="submit">Submit</button>
-            </div>    
+            </div>   
+            <div class="socialmedia">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-reddit"></a>
+            </div>
         </form>
     </section>
 

@@ -5,6 +5,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
+
 ul{
     list-style-type: none;
     background-color: #80604d;
@@ -17,7 +18,7 @@ ul{
 li{
     float: left;
 }
-li :last-child{
+li input{
     float: right;
 }
 li a{
@@ -93,6 +94,9 @@ li a:hover{
   display: block;
 }
 
+#booktext{
+  margin: 1em;
+}
 .flex-item{
   display: inline-block;
 }
@@ -107,8 +111,13 @@ li a:hover{
   height: 350px;
 }
 
-.flex-item .classics{
+.flex-item .classics, .flex-item .new-released, .flex-item .fiction{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flex-item .new-released-box, .flex-item .classics-box, .flex-item .fiction-box {
+  padding: 1em;
+  border:1px solid;
+  margin: 1em;
 }
 .flex-item .audio{
   display: block;
@@ -117,13 +126,17 @@ li a:hover{
 
 .videos{
   display: flex;
+  border:1px solid;
+  padding: 1em;
+  margin: 1em;
 }
 
-.videos > video{
+.videos > video {
   padding: 1em;
   margin-top: none;
   width: 400px;
-  height: 350px;
+  height: 300px;
+  
 }
 
 .homepage{
@@ -135,6 +148,13 @@ li a:hover{
 footer{
   background-color: white;
   border-top: 2px  gray;
+}
+.socialmedia .fa{
+  color: black;
+  /* padding: 0.5px; */
+  font-size: 30px;
+  width: 30px;
+  text-decoration: none;
 }
 /* .grid-container{
     display: grid;

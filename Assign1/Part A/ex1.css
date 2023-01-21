@@ -33,31 +33,62 @@ li a{
 li a:hover{
     background-color: black ;
 }
-.imgcont{
-    display: block;
+#home>#parentcont> .imgcont> img{
+    display: inline-block;
     /* padding: 1px 4px; */
-    margin-right: auto;
-    margin-left: auto;
-    width:fit-content;
+    /* margin-right: auto;
+    margin-left: auto; */
+    width: 1425px;
+    
+
     
 }
-
+.menulist{
+    display: flex;
+}
 #menutable{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.flex-menu{
+    display: flex;
+}
+.flex-menu .side-menu{
+    padding: 2em;
+}
+.flex-menu .side-menu > table > td {
+    padding: 2em;
+}
+.flex-drink-menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+.flex-drink-menu > div > img {
+    border-radius: 50% ;
+    width: 150px;
+}
 h4{
     text-align: center;
     font-size: larger;
 }
-
+.flex-drink-menu .partition{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.flex-drink-menu .partition > div > img{
+    
+    border-radius: 50% ;
+    width: 130px;
+}
 /* #contactus{
     
     border-radius: 10em;
 } */
 
 .formdata{
-    box-sizing: content-box;
+    box-sizing: border-box;
     display: flex;
     size: 50px;
     background-color: #80604d;
@@ -67,33 +98,52 @@ h4{
 
 .messagebox{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     order: 2;
+    
 }
-
+.messagebox label{
+    color: beige;
+    
+}
 .messagebox > textarea{
     flex : 1;
-    max-width: 18em;
+    max-width: 16em;
+    max-height: 12em;
 }
 
 .contactdeets{
     flex: 0;
     order: 1;
+    margin-left: 2em;
     margin-right: 3em;
+    align-content: flex-end;
 }
 
-.contactdeets input{
-    width: 100%;
+#contactus .formdata .contactdeets input{
+    width: max-content;
+    flex-direction: row;
 }
-
-.contactdeets input, .contactdeets button{
+#contactus .formdata .contactdeets label{
+    color: beige;
+}
+#contactus .formdata .contactdeets input, .contactdeets button{
     padding: 1em;
     margin-bottom: 1em;
+}
+
+#contactus .formdata .fa{
+    color: beige;
+    padding: 0.5px;
+    font-size: 40px;
+    width: 50px;
+    text-decoration: none;
 }
 
 .form{
     box-sizing: border-box;
     display: grid;
+    align-content: flex-end;
     background-color: #80604d;
     border-radius: 3px;
     padding: 1.8em;
@@ -102,8 +152,22 @@ h4{
 .orderdeets{
     order: 1;
     flex: 0;
+    padding:1em;
 }
 
 .orderdeets label{
     display: inline;
+    color: beige;
+    margin-right: 3em;
+}
+.orderdeets input{
+   margin-left: 3em;
+}
+.orderdeets .orderbutton{
+    display: inline;
+}
+
+.orderdeets .orderbutton button{
+    margin-top: 2em;
+    padding: 1em;
 }

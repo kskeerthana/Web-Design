@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .flex-menu{
+            display: flex;
+        }
+        ul{
+            overflow: hidden;
+        }
+        .flex-drink-menu{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+        .flex-drink-menu > div > img {
+            border-radius: 50% ;
+            width: 150px;
+        }
+        /* .expand-menu > img{
+            border-radius: 60%;
+            width: 30px;
+        } */
+    </style>
+    <body>
+        <div class="flex-menu">
+            <div class ="side-menu">
+                <table>
+                    <tr><th>Drinks</th></tr>
+                    <tr><td>Coffees</td> </tr>
+                    <tr><td>Hot Teas</td></tr>
+                    <tr><td>Cold Coffees</td></tr>
+                    <tr><td>Iced Teas</td></tr>
+                    <tr><td>Cold Drinks</td></tr>
+                </table>
+                <table>
+                    <tr><th>Food</th></tr>
+                    <tr><td>Hot Breakfast</td> </tr>
+                    <tr><td>Bakery</td></tr>
+                    <tr><td>Lunch</td></tr>
+                    <tr><td>Snacks & Sweets</td></tr>
+                    <tr><td>Oatmeal & Yogurt</td></tr>
+                </table>
+            </div>
+            <div class="flex-drink-menu">
+                <div>Drinks</div>
+                <div><img src ="images/black-coffee.jpeg" alt="avatar"> Coffees</div>
+                <div><img src ="images/tea.jpeg" alt="avatar">Hot Teas</div>
+                <div><img src ="images/coldcoffee.jpeg" alt="avatar">Cold Coffees</div>
+                <div><img src ="images/icetea.jpeg" alt="avatar">Iced Teas</div>
+                <div><img src ="images/cold.jpeg" alt="avatar">Cold Drinks</div>
+                <br>
+                <div>Food</div>
+                <div><img src ="images/sandwich.jpeg" alt="avatar"> Hot Breakfast</div>
+                <div><img src ="images/danish.jpeg" alt="avatar">Bakery</div>
+                <div><img src ="images/lunch.jpeg" alt="avatar">Lunch</div>
+                <div><img src ="images/donut.jpeg" alt="avatar">Snacks & Sweets</div>
+                <div><img src ="images/oatmeal.jpeg" alt="avatar">Oatmeal & Yogurt</div>
+            </div>
+        </div>    
+    </body>
+</html>

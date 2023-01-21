@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cafe</title>
+        <title>Bookstore</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="web2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
+    <header>
+        <h3>Librería</h3>
+    </header>
     <body>
         <ul id="navbar">
             <li><a href="#home">Home</a></li>
             <div class="dropdown">
             <button class="drop-btn">Categories</button>
                 <div class="dropdown-content">
-                    <a href="#">Classics</a>
-                    <a href="#">Fiction</a>
+                    <a href="#classics">Classics</a>
+                    <a href="#fiction">Fiction</a>
                     <a href="#">Non fiction</a>
                     <a href="webPage2.html">Audiobooks</a>
                 </div>
             </div>
             <li><a href="#contactus">Contact Us</a></li>
-            <li><a href="page2.html">Order Now</a></li>
+            <li><a href="#">Order Now</a></li>
             <li><input type="text" placeholder="Search.."></li>
         </ul>
     <section id="home">
-    <h3>Books</h3>
     <div id="booktext">
-        Find your favorite Classics, Fictions and Non-Fictions here!
+        <b><i>Find your favorite Classics, Fictions and Non-Fictions here!</i></b>
     </div>
     <div class="flex-item">
-        <div class="classics">
+        <div class="new-released-box">
+        <div class="new-released">
             <b>New Released</b>
         </div>
         <div class="images">
@@ -36,8 +40,9 @@
         <img src="images/empty.jpeg">
         <img src="images/jay.jpeg">
         </div>
-
-        <div class="classics">
+        </div>
+        <div class="classics-box">
+        <div class="classics" id="classics">
             <b>Classics</b>
         </div>
         <div class="images">
@@ -46,8 +51,10 @@
         <img src="images/sense&sensibility.jpeg">
         <img src="images/wuthering.jpeg">
         </div>
+        </div>
 
-        <div class="classics">
+        <div class="fiction-box">
+        <div class="fiction" id="fiction">
             <b>Fiction</b>
         </div>
         <div class="images">
@@ -56,16 +63,21 @@
         <img src="images/potrait.jpg">
         <img src="images/catcher.jpeg">
         </div>
+        </div>
 
-        <div class="classics">
-            <b>Audiobooks</b>
+        <div class="audiobooks">
+            <a href="webPage2.html"><b>Audiobooks</b></a>
         <!-- </div>
         <div class="images">
         <video a href="https://youtu.be/_9DC881PWbU"></video>
         </div> -->
     </div>
     <footer>
-        <p>Copyright</p>
+        <div class="socialmedia">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-reddit"></a>
+        </div>
     </footer>
     
 </section>
