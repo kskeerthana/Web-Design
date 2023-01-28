@@ -1,0 +1,57 @@
+.container-fluid {
+    text-align: center !important;
+  }
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative; 
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding-top: 15px;
+  }
+.work-two{
+  padding-top: 3em;
+}  
+.work-data{
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+}
+.primary-btn {
+    background-color: #820000;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.primary-btn:hover{
+  color: antiquewhite;
+}
+@media only screen and (max-width:1000px){
+
+  .primary-btn{
+    display: none;
+  }
+  
+}
