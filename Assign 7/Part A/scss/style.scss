@@ -1,0 +1,143 @@
+@import '_page2';
+@import '_config';
+@import '_mobile';
+
+
+header{
+    text-align: center;
+    color: $header-color;
+}
+
+ul{
+    list-style-type: none;
+    background-color: $navbar-color;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-self: center;
+
+    li{
+        float: left;
+    }
+
+    li:last-child{
+        float: right;
+    }
+
+    a{
+        display: inline-block;
+        color: $font-color;
+        text-align: center;
+        padding: 16px;
+        @include fontInterpolation(family, $font-stack);
+        text-align: center;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
+    a:hover{
+        background-color: black ;
+    }
+}
+
+#home{
+    img{
+        display: inline-block;
+        width: 1425px;
+    }
+}
+
+.flex-menu{
+
+    @include display-flex;
+    padding-top: 1em;
+    .side-menu{
+        padding: 2em;
+        
+    }
+
+    .flex-drink-menu{
+        @include display-flex;
+        flex-wrap: wrap;
+        padding: 2em;
+
+        img{
+            border-radius: 50% ;
+            width: 150px;
+        }
+
+        .partition{
+            @include interpolation(top, 2em, flex, flex-wrap);
+            
+        }
+    }
+}
+
+#contactus{
+    box-sizing: border-box;
+    @include display-flex;
+    size: 50px;
+    background-color: $navbar-color;
+    border-radius: 3px;
+    padding: 1.8em;
+    
+    .formdata{
+        @include display-flex;
+        justify-content: space-evenly;
+    }
+    .messagebox{
+        @include display-flex;
+        flex-direction: row;
+        order: 2; 
+        
+
+        input{
+            color: $font-color;
+        }
+
+        textarea{
+            flex : 1;
+            max-width: 16em;
+            max-height: 12em;
+        }
+
+        button{
+            order: 2;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    .contactdeets{
+        flex: 0;
+        order: 1;
+        margin-left: 2em;
+        margin-right: 3em;
+        align-content: flex-end;
+    
+        input{
+            width: max-content;
+            flex-direction: row;
+        }
+    
+        label{
+            color: $font-color;
+        }
+    }
+
+    .socialmedia{
+
+        display: flex;
+        justify-content: center ;
+
+        .fa{
+            color: $font-color;
+            padding: 0.5px;
+            font-size: 40px;
+            width: 50px;
+            text-decoration: none;
+        }
+    }
+    
+}   
+

@@ -1,0 +1,33 @@
+$header-color : black;
+$navbar-color : #80604d;
+$font-stack : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+$font-color : beige;
+
+@mixin display-flex(){
+    display: flex;
+}
+
+@mixin interpolation($changeable, $val, $val2, $prop1)
+{
+    margin-#{$changeable}: $val;
+    display: $val2;
+    #{$prop1}: wrap; 
+}
+
+@mixin fontInterpolation($changeable, $val){
+    font-#{$changeable} : $val;
+}
+
+$fonts : (size: x-large, style: italic ,family: $font-stack);
+
+@each $font-name, $value in $fonts{
+    header{
+        font-#{$font-name} : $value;
+    } 
+}
+
+$colors: #765341, #8b6c5c, #6a4a3a, #5b3e31;
+
+@function color-picker($index) {
+    @return nth($colors, ($index % length($colors)) + 1);
+  }
